@@ -47,6 +47,12 @@ class FootballTeamPlayers  implements Comparable <FootballTeamPlayers>{
 
     @Override
     public int compareTo(FootballTeamPlayers o) {
-        return 0;
+        if (this.results > o.results)
+            return 1;
+        else if(this.results < o.results)
+            return  -1;
+        else
+            return this.lastName.compareTo(o.lastName);
+
     }
 }

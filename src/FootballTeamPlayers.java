@@ -52,7 +52,6 @@ class FootballTeamPlayers  implements Comparable <FootballTeamPlayers>{
         else if(this.results < o.results)
             return  -1;
         else
-            return this.lastName.compareTo(o.lastName);
-
+            return 0;
     }
 }
